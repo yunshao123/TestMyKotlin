@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0000FF"
+            app:title=""
+            android:elevation="2dp"
+            app:popupTheme="@style/OverflowMenuStyle">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:layout_gravity="center"
+        />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.example.lan.testmykotlin.ClearEditedView
+            android:id="@+id/paddingview"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            app:LPaddingViewType="TEL"
+            app:rightButtonDrawable="@mipmap/ico_circle_close"
+            app:rightButtonImageScale="1"
+            app:rightButtonRightPadding="12dp"
+            app:rightButtonShowType="INPUTTING"
+            app:rightButtonType="CLEARED"
+            android:drawableLeft="@mipmap/ico_circle_close"
+            android:paddingLeft="10dp"/>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_main"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/navigation"/>
+</LinearLayout>

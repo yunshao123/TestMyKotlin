@@ -13,5 +13,6 @@ public class FragmentOne extends Fragment {
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_layout, null);
         return view;
+        //https://blog.csdn.net/ss_s1gn/article/details/70807277
     }
 }

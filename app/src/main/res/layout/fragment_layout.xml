@@ -5,9 +5,36 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvshow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ddddd" />
+    <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_below="@+id/title_view"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+        <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="转入"
+                android:textAlignment="center"
+                android:layout_height="30dp"
+                android:checked="true"
+                android:background="@drawable/transfer_left"
+                android:textColor="@color/tranfer_text"
+                />
+        <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="记录"
+                android:textAlignment="center"
+                android:layout_height="30dp"
+                android:background="@drawable/tranfer_right"
+                android:textColor="@color/tranfer_text"/>
+    </RadioGroup>
 </LinearLayout>
